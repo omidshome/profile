@@ -1,0 +1,28 @@
+.mainContainer {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+
+.mainContainer .carousel {
+  justify-self: center !important;
+  width: 100% !important;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  border: 0.5px solid black;
+}
+
+.legend {
+  font-family: "B Nazanin";
+  font-weight: 800;
+  font-size: 18px !important;
+  opacity: 0.6 !important;
+}
+
+.carousel .slide .legend {
+  margin-bottom: 20px !important;
+}
