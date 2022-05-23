@@ -19,20 +19,20 @@ const TouristCard = ({ source, attractionName }) => {
 
   const theme = createTheme({
     typography: {
-      dir: "rtl",
+      direction: "rtl",
       fontFamily: ["Vazir"].join(","),
     },
   });
 
   return (
     <ThemeProvider theme={theme}>
-      <Grid item xs={12} lg={4} md={6}>
-        <Paper elevation={5} sx={{ width: "250px" }}>
+      <Grid item lg={4}>
+        <Paper elevation={5} sx={{ width: "300px" }}>
           <Image
             placeholder="blur"
             src={source}
-            width={250}
-            height={125}
+            width={300}
+            height={150}
             alt="Trousit attraction"
           />
           <Box sx={{ padding: "5px" }}>
