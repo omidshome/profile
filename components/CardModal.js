@@ -31,7 +31,7 @@ export default function AlertDialog({ flag, setflag }) {
         <DialogTitle id="Agreement">
           {`مطمئن هستی ؟ `}
           <span>
-            <MoodBadTwoToneIcon style={{ color: "darkred" }} />
+            <MoodBadTwoToneIcon />
           </span>
         </DialogTitle>
         <DialogContent>
