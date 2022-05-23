@@ -2,11 +2,21 @@ import { Grid, Paper, Rating, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Image from "next/image";
-import { AccessTime, FavoriteBorderOutlined } from "@mui/icons-material";
+import { AccessTime } from "@mui/icons-material";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { pink } from "@mui/material/colors";
 
 import { randomUnitGenerator } from "./RandomGenerator";
+import { useState } from "react";
 
 const TouristCard = ({ source, attractionName }) => {
+  const [heart, setHeart] = useState(false);
+
+  const toggleHeart = () => {
+    setHeart(!heart);
+  };
+
   const theme = createTheme({
     typography: {
       dir: "rtl",
@@ -50,14 +60,15 @@ const TouristCard = ({ source, attractionName }) => {
               readOnly
             />
 
-            <Box>
-              <Typography dir="rtl" fontSize={"12px"} fontWeight={"800"}>
-                قیمت از 70$
-              </Typography>
-
-              <FavoriteBorderOutlined onClick={() => console.log("clicked")} />
-            </Box>
+            <Typography dir="rtl" fontSize={"12px"} fontWeight={"800"}>
+              قیمت از 70$
+            </Typography>
           </Box>
+
+          {heart && (
+            <FavoriteIcon sx={{ color: pink[500] }} onClick={toggleHeart} />
+          )}
+          {!heart && <FavoriteBorderOutlinedIcon onClick={toggleHeart} />}
         </Paper>
       </Grid>
     </ThemeProvider>

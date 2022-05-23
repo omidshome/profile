@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import TouristCard from "../../components/TouristCard";
@@ -11,6 +11,9 @@ import T4 from "../../public/TouristIMG/T4.jpg";
 const index = () => {
   return (
     <Container>
+      <Typography variant="h2" component={"h2"} dir="rtl" fontFamily={"Vazir"}>
+        تورهای داغ این فصل
+      </Typography>
       <Grid container spacing={5}>
         <TouristCard source={T1} attractionName={"دروازه برندینگ"} />
         <TouristCard source={T2} attractionName={"جنگل سیاه سویس"} />
