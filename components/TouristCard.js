@@ -2,18 +2,17 @@ import { Grid, Paper, Rating, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Image from "next/image";
-import { AccessTime } from "@mui/icons-material";
+import { AccessTime, FavoriteBorderOutlined } from "@mui/icons-material";
+
+import { randomUnitGenerator } from "./RandomGenerator";
 
 const TouristCard = ({ source, attractionName }) => {
   const theme = createTheme({
     typography: {
+      dir: "rtl",
       fontFamily: ["Vazir"].join(","),
     },
   });
-
-  const randomUnitGenerator = (min, max) => {
-    return Math.random() * (max - min + 1) + min;
-  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -50,6 +49,14 @@ const TouristCard = ({ source, attractionName }) => {
               precision={0.5}
               readOnly
             />
+
+            <Box>
+              <Typography dir="rtl" fontSize={"12px"} fontWeight={"800"}>
+                قیمت از 70$
+              </Typography>
+
+              <FavoriteBorderOutlined onClick={() => console.log("clicked")} />
+            </Box>
           </Box>
         </Paper>
       </Grid>
