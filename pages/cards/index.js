@@ -10,7 +10,7 @@ import T4 from "../../public/TouristIMG/T4.jpg";
 
 const index = () => {
   return (
-    <Container paddingY={3}>
+    <Container>
       <Typography
         variant="h4"
         component={"h2"}
@@ -21,7 +21,15 @@ const index = () => {
         تورهای داغ این فصل
       </Typography>
 
-      <Grid container spacing={12}>
+      <Grid
+        container
+        spacing={12}
+        justifyContent={{
+          xs: "space-evenly",
+          md: "space-evenly",
+          lg: "space-between",
+        }}
+      >
         <TouristCard source={T1} attractionName={"دروازه برندینگ"} />
         <TouristCard source={T2} attractionName={"جنگل سیاه سویس"} />
         <TouristCard source={T3} attractionName={"پل طلایی سنفرانسیسکو"} />

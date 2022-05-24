@@ -27,7 +27,7 @@ const TouristCard = ({ source, attractionName }) => {
   return (
     <ThemeProvider theme={theme}>
       <Grid item lg={4}>
-        <Paper elevation={5} sx={{ width: "300px" }}>
+        <Paper elevation={10} sx={{ width: "300px", marginBottom: "2rem" }}>
           <Image
             placeholder="blur"
             src={source}
