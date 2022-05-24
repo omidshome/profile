@@ -1,6 +1,7 @@
-import { Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
+import CardSnack from "../../components/CardSnackbar";
 import TouristCard from "../../components/TouristCard";
 
 import T1 from "../../public/TouristIMG/T1.jpg";
@@ -9,6 +10,13 @@ import T3 from "../../public/TouristIMG/T3.jpg";
 import T4 from "../../public/TouristIMG/T4.jpg";
 
 const index = () => {
+  const [snackFlag, setSnackFlag] = useState(false);
+  const [heartStatus, setHeartStatus] = useState(false);
+
+  const snackFlagHandler = () => {
+    setSnackFlag(!snackFlag);
+  };
+
   return (
     <Container>
       <Typography
@@ -20,7 +28,6 @@ const index = () => {
       >
         تورهای داغ این فصل
       </Typography>
-
       <Grid
         container
         spacing={12}
@@ -30,11 +37,38 @@ const index = () => {
           lg: "space-between",
         }}
       >
-        <TouristCard source={T1} attractionName={"دروازه برندینگ"} />
-        <TouristCard source={T2} attractionName={"جنگل سیاه سویس"} />
-        <TouristCard source={T3} attractionName={"پل طلایی سنفرانسیسکو"} />
-        <TouristCard source={T4} attractionName={"چشم لندن "} />
+        <TouristCard
+          source={T1}
+          attractionName={"دروازه برندینگ"}
+          snackFlagHandler={snackFlagHandler}
+          setHeartStatus={setHeartStatus}
+        />
+        <TouristCard
+          source={T2}
+          attractionName={"جنگل سیاه سویس"}
+          snackFlagHandler={snackFlagHandler}
+          setHeartStatus={setHeartStatus}
+        />
+        <TouristCard
+          source={T3}
+          attractionName={"پل طلایی سنفرانسیسکو"}
+          snackFlagHandler={snackFlagHandler}
+          setHeartStatus={setHeartStatus}
+        />
+        <TouristCard
+          source={T4}
+          attractionName={"چشم لندن "}
+          snackFlagHandler={snackFlagHandler}
+          setHeartStatus={setHeartStatus}
+        />
       </Grid>
+      {snackFlag && (
+        <CardSnack
+          snackFlag={snackFlag}
+          setSnackFlag={setSnackFlag}
+          heartStatus={heartStatus}
+        />
+      )}
     </Container>
   );
 };

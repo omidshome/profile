@@ -1,4 +1,4 @@
-import { Grid, Paper, Rating, Typography } from "@mui/material";
+import { Grid, Paper, Rating, Snackbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Image from "next/image";
@@ -10,11 +10,18 @@ import { pink } from "@mui/material/colors";
 import { randomUnitGenerator } from "./RandomGenerator";
 import { useState } from "react";
 
-const TouristCard = ({ source, attractionName }) => {
+const TouristCard = ({
+  source,
+  attractionName,
+  snackFlagHandler,
+  setHeartStatus,
+}) => {
   const [heart, setHeart] = useState(false);
 
   const toggleHeart = () => {
-    setHeart(!heart);
+    setHeart((pre) => !heart);
+    setHeartStatus(heart);
+    snackFlagHandler();
   };
 
   const theme = createTheme({
@@ -64,10 +71,10 @@ const TouristCard = ({ source, attractionName }) => {
               قیمت از 70$
             </Typography>
           </Box>
-
           {heart && (
             <FavoriteIcon sx={{ color: pink[500] }} onClick={toggleHeart} />
           )}
+
           {!heart && <FavoriteBorderOutlinedIcon onClick={toggleHeart} />}
         </Paper>
       </Grid>
