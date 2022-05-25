@@ -19,10 +19,12 @@
 .legend {
   font-family: "B Nazanin";
   font-weight: 800;
-  font-size: 18px !important;
+  font-size: 1rem !important;
   opacity: 0.6 !important;
+  position: absolute !important;
+  bottom: 5px !important;
 }
 
 .carousel .slide .legend {
-  margin-bottom: 20px !important;
+  /* margin-bottom: 20px !important; */
 }
