@@ -9,7 +9,7 @@ import T2 from "../../public/TouristIMG/T2.jpg";
 import T3 from "../../public/TouristIMG/T3.jpg";
 import T4 from "../../public/TouristIMG/T4.jpg";
 
-const index = () => {
+const Index = () => {
   const [snackFlag, setSnackFlag] = useState(false);
   const [heartStatus, setHeartStatus] = useState(false);
 
@@ -76,4 +76,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

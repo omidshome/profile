@@ -1,7 +1,7 @@
 import React from "react";
 
-const crypto = () => {
+const Crypto = () => {
   return <h1 style={{ paddingTop: "3rem" }}>Cryptocurrency Tracker</h1>;
 };
 
-export default crypto;
+export default Crypto;

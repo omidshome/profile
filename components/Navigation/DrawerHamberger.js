@@ -12,7 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-const navDrawer = () => {
+const NavDrawer = () => {
   const router = useRouter();
   const [openHambergerDrawer, setOpenHambergerDrawer] = useState(false);
 
@@ -55,4 +55,4 @@ const navDrawer = () => {
   );
 };
 
-export default navDrawer;
+export default NavDrawer;
