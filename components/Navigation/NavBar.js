@@ -41,7 +41,7 @@ const NavBar = () => {
                 <Tab label="Cards" onClick={() => router.push("/cards")} />
                 <Tab
                   label="Cryptocurrency tracker"
-                  onClick={() => router.push("/")}
+                  onClick={() => router.push("/cryptot")}
                 />
                 <Tab label="#example" onClick={() => router.push("/")} />
               </Tabs>

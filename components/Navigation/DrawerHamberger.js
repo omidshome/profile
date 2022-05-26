@@ -35,6 +35,13 @@ const navDrawer = () => {
               </ListItemText>
             </ListItemIcon>
           </ListItemButton>
+          <ListItemButton>
+            <ListItemIcon>
+              <ListItemText onClick={() => router.push("/cryptot")}>
+                Cryptocurrency Tracker
+              </ListItemText>
+            </ListItemIcon>
+          </ListItemButton>
         </List>
       </Drawer>
 
