@@ -22,6 +22,7 @@ function CryptoGrids({ data }) {
         component={"h1"}
         paddingTop={"5rem"}
         marginBottom={"2.5rem"}
+        sx={{ fontFamily: "Courgette" }}
       >
         My favorit Cryptocurrency-Tracker
       </Typography>
