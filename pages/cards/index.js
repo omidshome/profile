@@ -19,15 +19,18 @@ const index = () => {
 
   return (
     <Container>
-      <Typography
-        variant="h4"
-        component={"h2"}
-        dir="rtl"
-        fontFamily={"Titr"}
-        marginY={"20px"}
-      >
-        تورهای داغ این فصل
-      </Typography>
+      <Box>
+        <Typography
+          variant="h4"
+          component={"h2"}
+          dir="rtl"
+          fontFamily={"Titr"}
+          marginY={"2rem"}
+          paddingTop={"2.8rem"}
+        >
+          تورهای داغ این فصل
+        </Typography>
+      </Box>
       <Grid
         container
         spacing={12}
