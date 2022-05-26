@@ -1,8 +1,16 @@
 import React from "react";
 import axios from "axios";
+import CryptoGrids from "../../components/cryptoGrid/CryptoGrids";
 
 const Crypto = ({ data }) => {
-  return <h1 style={{ paddingTop: "3rem" }}>Cryptocurrency Tracker</h1>;
+  return (
+    <>
+      {/* {data.map((data) => {
+        return <h3 key={data.id}>{data.name}</h3>;
+      })} */}
+      <CryptoGrids data={data} />
+    </>
+  );
 };
 
 export default Crypto;
@@ -16,6 +24,6 @@ export async function getStaticProps() {
   console.log({ data });
 
   return {
-    props: { data: data },
+    props: { data },
   };
 }
