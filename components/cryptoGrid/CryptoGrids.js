@@ -25,7 +25,7 @@ function CryptoGrids({ data }) {
         marginBottom={"2.5rem"}
         sx={{ fontFamily: "Courgette" }}
       >
-        My favorit Cryptocurrency-Tracker
+        My favorite Cryptocurrency-Tracker
       </Typography>
 
       <DataGrid
@@ -52,7 +52,3 @@ function CryptoGrids({ data }) {
 }
 
 export default CryptoGrids;
-
-// export const imageLoader = ({ src }) => {
-//   return <image alt="Crypto Coin" src={`${src}`} style={{ width: "100px" }} />;
-// };
