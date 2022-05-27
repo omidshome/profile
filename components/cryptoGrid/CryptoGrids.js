@@ -2,10 +2,12 @@ import { ControlPointDuplicate } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Box, color, Container, width } from "@mui/system";
 import { DataGrid } from "@mui/x-data-grid";
-import React from "react";
+import React, { useState } from "react";
 
 function CryptoGrids({ data }) {
-  const coinRows = data.map((coin) => {
+  const [updateData, setUpdateData] = useState(data);
+
+  const coinRows = updateData.map((coin) => {
     return {
       id: coin.id,
       CoinName: coin.name,
