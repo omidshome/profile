@@ -1,14 +1,23 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { Typography } from "@mui/material";
+import { Container } from "@mui/system";
 import CryptoGrids from "../../components/cryptoGrid/CryptoGrids";
 
 const Crypto = ({ data }) => {
-  const router = useRouter();
-  const [updatedData, setupdatedData] = useState(data);
-
   return (
     <>
-      <CryptoGrids data={updatedData} />
+      <Container>
+        <Typography
+          variant="h3"
+          component={"h1"}
+          paddingTop={"5rem"}
+          marginBottom={"2.5rem"}
+          sx={{ fontFamily: "Courgette" }}
+        >
+          My favorite Cryptocurrency-Tracker
+        </Typography>
+
+        <CryptoGrids data={data} />
+      </Container>
     </>
   );
 };
