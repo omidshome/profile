@@ -42,6 +42,13 @@ const NavDrawer = () => {
               </ListItemText>
             </ListItemIcon>
           </ListItemButton>
+          <ListItemButton>
+            <ListItemIcon>
+              <ListItemText onClick={() => router.push("/photo")}>
+                Photo Gallary
+              </ListItemText>
+            </ListItemIcon>
+          </ListItemButton>
         </List>
       </Drawer>
 
