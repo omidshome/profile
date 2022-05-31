@@ -3,7 +3,7 @@ import { DatePicker } from "jalali-react-datepicker";
 function DataPicker() {
   return (
     <div>
-      <DatePicker />
+      <DatePicker weekend={[6]} />
     </div>
   );
 }

@@ -4,16 +4,11 @@ import ToDoDatePicker from "../../components/todoComponents/ToDoDatePicker";
 function Index() {
   return (
     <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <h4>Regular h4</h4>
-      <p className="h2">p with h1 bootstrap</p>
-
-      <h1 className="display-4" dir="rtl">
-        به فوتو خوش آمادید
-      </h1>
+      <div className="mt-5 py-5 px-5">
+        <h1 className="display-4 " dir="rtl">
+          به <span className="fw-bold display-5">Todo List</span> خوش آمادید
+        </h1>
+      </div>
 
       <ToDoDatePicker />
     </div>
