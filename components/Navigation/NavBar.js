@@ -43,10 +43,7 @@ const NavBar = () => {
                   label="Cryptocurrency tracker"
                   onClick={() => router.push("/cryptot")}
                 />
-                <Tab
-                  label="Photo Gallary"
-                  onClick={() => router.push("/photo")}
-                />
+                <Tab label="To Do List" onClick={() => router.push("/todo")} />
               </Tabs>
               <Box marginLeft={"auto"}>
                 <LoginIcon />

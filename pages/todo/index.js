@@ -1,4 +1,5 @@
 import { Stack } from "react-bootstrap";
+import ToDoDatePicker from "../../components/todoComponents/ToDoDatePicker";
 
 function Index() {
   return (
@@ -10,10 +11,11 @@ function Index() {
       <h4>Regular h4</h4>
       <p className="h2">p with h1 bootstrap</p>
 
-      <Stack gap={5}>
-        <div className="bg-light border">First item</div>
-        <div className="bg-light border">Second item</div>
-      </Stack>
+      <h1 className="display-4" dir="rtl">
+        به فوتو خوش آمادید
+      </h1>
+
+      <ToDoDatePicker />
     </div>
   );
 }
