@@ -16,6 +16,7 @@ function Index() {
         <h1 className="display-4 " dir="rtl">
           به <span className="fw-bold display-5">Todo List</span> خوش آمادید
         </h1>
+        <h2 dir="rtl">{`تست اعداد ${ConvertToArabicNumbers(123456789)}`}</h2>
       </div>
 
       <ToDoDatePicker />
