@@ -17,6 +17,9 @@ function Index() {
           به <span className="fw-bold display-5">Todo List</span> خوش آمادید
         </h1>
         <h2 dir="rtl">{`تست اعداد ${ConvertToArabicNumbers(123456789)}`}</h2>
+        <h1 className="display-4 " dir="rtl">
+          این پروژه در حال تکمیل میباشد لطفا بعدا بازدید بفرمایید
+        </h1>
       </div>
 
       <ToDoDatePicker />

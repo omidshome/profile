@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import PhotoCarousel from "../components/PhotoCarousel";
 import TranslatorIntroduction from "../components/Translator/TranslatorIntroduction";
 import MainPageIntroduction from "../components/MainPageIntro/MainPageIntro";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         {/* <TranslatorIntroduction /> */}
 
         <MainPageIntroduction />
+        {/* <Footer /> */}
       </Container>
     </div>
   );

@@ -2,8 +2,6 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import { Avatar, Grid, Typography } from "@mui/material";
 
-import bgg from "./Background.module.css";
-
 export default function IntroPaper() {
   return (
     <Box
