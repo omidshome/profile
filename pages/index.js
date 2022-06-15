@@ -4,6 +4,7 @@ import { Container } from "@mui/system";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import PhotoCarousel from "../components/PhotoCarousel";
 import TranslatorIntroduction from "../components/Translator/TranslatorIntroduction";
+import MainPageIntroduction from "../components/MainPageIntro/MainPageIntro";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         <h1>Omid Abdi</h1>
         <PhotoCarousel />
 
-        <TranslatorIntroduction />
+        {/* <TranslatorIntroduction /> */}
+
+        <MainPageIntroduction />
       </Container>
     </div>
   );
