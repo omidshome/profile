@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import "../styles/PhotoCarousel.css";
+import "../styles/particles.css";
 import NavBar from "../components/Navigation/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
