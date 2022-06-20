@@ -7,7 +7,7 @@ const Crypto = ({ data }) => {
     <>
       <Container>
         <Typography
-          variant="h3"
+          variant="h5"
           component={"h1"}
           paddingTop={"5rem"}
           marginBottom={"2.5rem"}
