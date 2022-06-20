@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div>
       <Box
-        mt={"1.5rem"}
+        mt={"2.5rem"}
         pb={"1.5rem"}
         className={bg.theme}
         sx={{

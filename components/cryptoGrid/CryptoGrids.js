@@ -45,7 +45,13 @@ function CryptoGrids() {
     });
 
     return (
-      <Container style={{ height: "70vh", width: "80%" }}>
+      <Container
+        style={{
+          height: "70vh",
+          width: "80%",
+          paddingBottom: "2rem",
+        }}
+      >
         <DataGrid
           rowHeight={70}
           pageSize={7}
